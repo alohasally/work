@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sally's homepage</title>
+    <!-- font & icon -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&family=Noto+Sans+KR:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://your_path_to_version_6_files/css/all.css" >
+    
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/reset.css" type="text/css">  
+    <link rel="stylesheet" href="css/common.css" type="text/css"> 
+    <link rel="stylesheet" href="css/header.css" type="text/css"> 
+    <link rel="stylesheet" href="css/title.css" type="text/css"> 
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/aside.css" type="text/css">
+    <link rel="stylesheet" href="css/footer.css" type="text/css">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery.fullPage.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+<script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+</script>   
+<script src="js/header.js" type="text/javascript"></script>
+<script src="js/aside.js" type="text/javascript"></script>
+<script src="js/about.js" type="text/javascript"></script>
+<script src="js/about2.js" type="text/javascript"></script>
+<script src="js/weather.js"  type="text/javascript"></script>
+<script>
+    $(document).ready(
+       function(){
+           // 서브메뉴 표시(햄버거버튼)
+           $("header .wrap a.allmenu").click(function(){
+               // x변환
+               $(this).toggleClass("x");
+               // 대메뉴등장
+               $("header .wrap ul.gnb").toggleClass("moveShow");
+               return false;
+              });
+       });
+</script>
+
+</head>
+<!--  -->
+<body>
+    <!-- 상단영역 -->
+    <header>
+        <div class="wrap">
+            <a href="https://alohasally.github.io/home" class="home" target="_blank"> <h1 class="rasally">RASALLY</h1></a>
+            <ul class="gnb">
+                <li><a href="https://alohasally.github.io/home" class="work">HOME</a></li>
+                <li><a href="https://alohasally.github.io/work" class="portfolio">WORKS</a></li>
+                <li><a href="https://alohasally.github.io/about" class="about">ABOUT ME</a></li>
+                <li><a href="https://alohasally.github.io/contact" class="contact">CONTACT</a></li>
+            </ul>
+        </div>   
+    </header>
+
+
+    <!-- div#title+(main>section*3>div.wrap)+footer -->
+
+    <!-- 내용영역 -->
+   
+    <main>
+        <section id="work">
+            <div class="wrap">
+                <h2 class="h2">WORKS</h2>
+                <strong class="typing-text">다양한 영역에서 작업했던 포트폴리오-</strong>
+                <p class="p">지금까지 여러 영역에서 일을 했습니다. <br>
+                    기획, 브랜딩, 디자인, 일러스트, UI/UX 프론트엔드 등 관련 작업물을 소개합니다</p>
+                <ul>
+                    <li>
+                        <h3>BRANDING</h3>
+                        <p>#concept #plan #editor #trend</p>
+                        <a href="pf4/index.html" target="_blank">check</a>
+                    </li>
+                    <li>
+                        <h3>DESIGN</h3>
+                        <p>#graphic #product #detail</p>
+                        <a href="pf3/index.html" target="_blank">check</a>
+                    </li>
+                    <li>
+                        <h3>ART</h3>
+                        <p>#watercolor #botanical </p>
+                        <a href="pf5/index.html" target="_blank">check</a>
+                    </li>
+                    <li>
+                        <h3>Illust</h3>
+                        <p>#digital #painting #procreate</p>
+                        <a href="https://alohasally.github.io/pf" target="_blank">check</a>
+                    </li>
+                    <li>
+                        <h3>UI/UX</h3>
+                        <p>#html #css #website #figma</p>
+                        <a href="https://alohasally.github.io/pf" target="_blank">check</a>
+                    </li>
+                    <li>
+                        <h3>FRONT-END</h3>
+                        <p>#javascript #react </p>
+                        <a href="https://alohasally.github.io/front-end-project" target="_blank">check</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </section>
+       
+    </main>
+
+    <!-- aside -->
+    
+    <aside class="right">
+        <a href="" class="top">맨위로 가기</a>
+    </aside>
+
+
+   <!-- 하단영역 -->
+   <footer class="section fp-auto-height">
+    <div class="wrap">
+        <div id="weather" class="local">
+            <span></span> 
+            <span></span>
+        </div>
+      
+        <div class="right">
+            <ul class="sns">
+                <li><a href="https://www.instagram.com" alt=""><i class="fab fa-instagram"></i>인스타그램</a></li>
+                <li><a href="https://www.linkedin.com" alt=""><i class="fab fa-linkedin"></i>링크드인</a></li>
+                <li><a href="https://www.behance.net" alt=""><i class="fab fa-behance-square"></i>비헨스</a></li>
+            </ul>
+        </div>
+        <p>Copyright &copy2022 Rasally All rights reserved</p>
+    </div>
+</footer>
+</body>
+</html>
