@@ -76,85 +76,221 @@ header .wrap ul.gnb.moveShow{
     display: block; 
   }
 
-/* shop  */
-  #shop .wrap_1{
-    
-  height: 3300px;
-  }
-  #shop .wrap_1 ul{
-    
-  }
-  #shop .wrap_1 ul li{
-  width: 100%;
-  }
-    /* about1  */
-  #about1{
-    
-  width: 100%;
-  }
-  #about1 .wrap{
-    
-  }
-  #about1 .wrap_1{
-    
-  width: 100%;
-  }
-  #about1 hgroup{
-    
-  width: 100%;
-  }
-  #about2{
-    
-  display: block;
-  }
-  #about2 .wrap{
-    
-  width: 100%;
-  }
-  #about2 ul.list{
-    
-  }
-  #about2 ul.list .wrap_2{
-    
+
+  #work .wrap{
+  
+    height: 100%;
+    width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+   
+    /*! overflow-x:scroll; */
+    padding-top: 80px;
+    padding-left: calc((100% - 1200px) / 2);
+    padding-right: calc((100% - 1200px) / 2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   
-  #introduce .wrap{
+  #work .wrap h2{
+    font-family: 'Amiri', serif;
+    font-size: 31px;
+    letter-spacing: 1px;
+    line-height: 1;
+    color: #ac5676;
+    text-align: center;
     
-  width: 100%;
-  height: 800px;
-  justify-content: flex-start;
+    background-color: #fff1f1;
+  } 
+  #work .wrap strong{
+    display: block;
+    font-size: 40px;
+    margin: 60px 0;
+    text-transform: capitalize;
+    font-weight: 500;
+    color: transparent;
+    white-space: nowrap;
+    position: relative;
+    width: 700px;
+    left: 80px;
+  } 
+  #work .wrap strong::before {
+    content: "다양한 영역의 작업물 포트폴리오";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    color: #e4c3cd;
+    overflow: hidden;
+    border-right: 4px solid #e4c3cd;
+    animation: typing 5s steps(30) infinite;
+  }
+  
+  @keyframes typing{
+    0% {
+      width: 0%;
+    }
+    60% {
+      width: 100%; 
+    }
+    100% {
+      width: 0%;
+    }
+  }
+  
+  #work  .wrap .p{
+    text-align: center;
+    font-weight: 300;
+    padding-bottom: 50px;
+    line-height: 1.7;
+  }
+  #work  .wrap ul{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  #work  .wrap ul li{
+    width: calc(100% / 2 - 50px);
+    margin: 30px 10px;
+    border: 1px solid #eee;
+    padding: 20px;
+    height: 350px;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-color: rgba(102, 102, 102, 0.9);
+    z-index: 2;
+  } 
+   
+  
+  #work  .wrap ul li::before{
+    content: "";
+    display: block;
+    width: 555px;
+    height: 348px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0.5;
+    position:absolute;
+    top: 0px;
+    left: 0px;  
+    z-index: -1;
+  }
+  #work  .wrap ul li:hover::before{
+    opacity: 0.9;
+    cursor: pointer;
+  }
+  #work  .wrap ul li:hover{
+    box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+  }
+  #work  .wrap ul li{
+    position: relative;
+    transition: all 0.5s ease-in-out;
+  }
+  
+  #work  .wrap ul li::after{
+    display: block;
+    font-size: 130px;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.4);
+    top: 180px;
+    left: 400px;
+  }
+  #work  .wrap ul li:hover::after{
+    color:#333;
+  }
+  
+  #work  .wrap ul li:nth-child(1)::before{
+    background-image: url(../img/brand.jpg);
+  }
+  #work  .wrap ul li:nth-child(1)::after{
+    content:"01";
+  }
+  
+  #work  .wrap ul li:nth-child(2)::before{
+    background-image: url(../img/design.jpg);
+    background-size: 150%;
+    background-position-x: -1px;
+    background-position-y: -9px;
+  }
+  #work  .wrap ul li:nth-child(2)::after{
+    content:"02";
+  }
+  
+  #work  .wrap ul li:nth-child(3)::after{
+    content:"03";
+  }
+  #work  .wrap ul li:nth-child(3)::before{
+    background-image: url(../img/art.jpg);
+  }
+  
+  #work  .wrap ul li:nth-child(4)::after{
+    content:"04";
+  }
+  
+  #work  .wrap ul li:nth-child(4)::before{
+   background-image: url(../img/illust.jpg);
+  }
+  
+  #work  .wrap ul li:nth-child(5)::after{
+    content:"05";
   } 
   
+  #work  .wrap ul li:nth-child(5)::before{
+    background-image: url(../img/uiux.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   
-/*  about  */
-  #about3{
-  height: 700px;
+  #work  .wrap ul li:nth-child(6)::after{
+    content:"06";
   }
-  #about3 ul.list_2{
-    
-  align-items: center;
-  flex-wrap: wrap;
+  #work  .wrap ul li:nth-child(6)::before{
+    background-image: url(../img/frontend.jpg);
+    background-position: top;
+    background-size: 160%;
   }
-  #about3 ul.list_2 li{
-    
-  width: calc(190px*0.7);
-  height: calc(190px*0.7);
-  flex-wrap: wrap;
-  display: flex;
-  justify-content: center;
+  
+  #work  .wrap ul li h3{
+    font-size: 30px;
+    color: #fff;
+  } 
+  
+  #work  .wrap ul li p{
+    line-height: 2;
+    color: #fff;
   }
-  #about3 ul.list_2 li h3{
-    
-  margin-top: -22px;
+  
+  #work  .wrap ul li a{
+    font-size: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-  #about3 p{
-
-  line-height: 2;
-  text-align: center;
-  color: #666;
-  position: absolute;
-  font-size: 90%;
-}
+  #work  .wrap ul li:hover h3{
+    color:#333;
+    z-index: 3
+  }
+  #work  .wrap ul li:hover p{
+    color:#000;
+  }
+  
+  
+  
+ 
   #work .wrap{
     height: 1500px;
   }
@@ -234,75 +370,219 @@ transform: translateX(65px);
 } 
   
   
-/*  shop  */
-  #shop .wrap_1{
-    
-  height: 2000px;
-  }
-  #shop .wrap_1 ul{
-    
-  }
-  #shop .wrap_1 ul li{
-    
-  width: calc(100% /2 - 36px);
-  }
+#work .wrap{
   
+  height: 100%;
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+ 
+  /*! overflow-x:scroll; */
+  padding-top: 80px;
+  padding-left: calc((100% - 1200px) / 2);
+  padding-right: calc((100% - 1200px) / 2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#work .wrap h2{
+  font-family: 'Amiri', serif;
+  font-size: 31px;
+  letter-spacing: 1px;
+  line-height: 1;
+  color: #ac5676;
+  text-align: center;
   
-   /* about1  */
-  #about1{
-    
-  width: 100%;
-  }
-  #about1 .wrap{
-    
+  background-color: #fff1f1;
+} 
+#work .wrap strong{
   display: block;
-  }
-  #about1 .wrap_1{
-    
+  font-size: 40px;
+  margin: 60px 0;
+  text-transform: capitalize;
+  font-weight: 500;
+  color: transparent;
+  white-space: nowrap;
+  position: relative;
+  width: 700px;
+  left: 80px;
+} 
+#work .wrap strong::before {
+  content: "다양한 영역의 작업물 포트폴리오";
+  position: absolute;
+  top: 0;
+  left: 0px;
   width: 100%;
+  height: 100%;
+  color: #e4c3cd;
+  overflow: hidden;
+  border-right: 4px solid #e4c3cd;
+  animation: typing 5s steps(30) infinite;
+}
+
+@keyframes typing{
+  0% {
+    width: 0%;
   }
-  #about1 hgroup{
-    
+  60% {
+    width: 100%; 
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+#work  .wrap .p{
+  text-align: center;
+  font-weight: 300;
+  padding-bottom: 50px;
+  line-height: 1.7;
+}
+#work  .wrap ul{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
   width: 100%;
-  }
-  #about1 p{
-    
+  justify-content: center;
+}
+
+#work  .wrap ul li{
+  width: calc(100% / 2 - 50px);
+  margin: 30px 10px;
+  border: 1px solid #eee;
+  padding: 20px;
+  height: 350px;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: rgba(102, 102, 102, 0.9);
+  z-index: 2;
+} 
+ 
+
+#work  .wrap ul li::before{
+  content: "";
+  display: block;
+  width: 555px;
+  height: 348px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  position:absolute;
+  top: 0px;
+  left: 0px;  
+  z-index: -1;
+}
+#work  .wrap ul li:hover::before{
+  opacity: 0.9;
+  cursor: pointer;
+}
+#work  .wrap ul li:hover{
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.2);
+}
+#work  .wrap ul li{
+  position: relative;
+  transition: all 0.5s ease-in-out;
+}
+
+#work  .wrap ul li::after{
+  display: block;
+  font-size: 130px;
+  position: absolute;
+  color: rgba(255, 255, 255, 0.4);
+  top: 180px;
+  left: 400px;
+}
+#work  .wrap ul li:hover::after{
+  color:#333;
+}
+
+#work  .wrap ul li:nth-child(1)::before{
+  background-image: url(../img/brand.jpg);
+}
+#work  .wrap ul li:nth-child(1)::after{
+  content:"01";
+}
+
+#work  .wrap ul li:nth-child(2)::before{
+  background-image: url(../img/design.jpg);
+  background-size: 150%;
+  background-position-x: -1px;
+  background-position-y: -9px;
+}
+#work  .wrap ul li:nth-child(2)::after{
+  content:"02";
+}
+
+#work  .wrap ul li:nth-child(3)::after{
+  content:"03";
+}
+#work  .wrap ul li:nth-child(3)::before{
+  background-image: url(../img/art.jpg);
+}
+
+#work  .wrap ul li:nth-child(4)::after{
+  content:"04";
+}
+
+#work  .wrap ul li:nth-child(4)::before{
+ background-image: url(../img/illust.jpg);
+}
+
+#work  .wrap ul li:nth-child(5)::after{
+  content:"05";
+} 
+
+#work  .wrap ul li:nth-child(5)::before{
+  background-image: url(../img/uiux.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#work  .wrap ul li:nth-child(6)::after{
+  content:"06";
+}
+#work  .wrap ul li:nth-child(6)::before{
+  background-image: url(../img/frontend.jpg);
+  background-position: top;
+  background-size: 160%;
+}
+
+#work  .wrap ul li h3{
+  font-size: 30px;
+  color: #fff;
+} 
+
+#work  .wrap ul li p{
+  line-height: 2;
+  color: #fff;
+}
+
+#work  .wrap ul li a{
+  font-size: 0;
   width: 100%;
-  }
-  #about2{
-    
-  }
-  #about2 .wrap{
-    
-  }
-  #about2 ul.list{
-    
-  }
-  #about2 ul.list .wrap_2{
-    
-  transform: rotate(0deg);
-  top: 100%;
-  }
-  #about2 .wrap li.h5{
-    
-  /*! top: 0px; */
-  transform: rotate(0deg);
-  width: 100%;
-  }
-  #about2 .wrap li.h5:nth-child(1){
-  left: 100%;
-  transform: rotate(0deg);
-  }
-  #about2 .wrap li.h5:nth-child(2){
-  left: 100%;
-  transform: rotate(0deg);  
-  }
-  #about2 .wrap li.h5:nth-child(3){
-    
-  left: 100%;
-  }
-  
-  
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+#work  .wrap ul li:hover h3{
+  color:#333;
+  z-index: 3
+}
+#work  .wrap ul li:hover p{
+  color:#000;
+}
+
+
+ 
   
   
 footer{
